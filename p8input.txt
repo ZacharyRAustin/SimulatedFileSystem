@@ -1,0 +1,32 @@
+add_network_node PC pc1 4096 Larry
+add_network_node printer pr1 2048 5
+system_status
+ls pr1
+create_file pc1 f1 20
+123456789
+abcdefghi
+ls pc1
+create_file pr1 f1 16
+File f1 on pr1.
+create_file pc1 f2 70
+111111111
+222222222
+333333333
+444444444
+555555555
+666666666
+777777777
+create_file pc1 f3 70
+aaaaaaaaa
+bbbbbbbbb
+ccccccccc
+ddddddddd
+eeeeeeeee
+fffffffff
+ggggggggg
+ls pc1
+ls pr1
+print_files pr1 f2 f1
+print_files pc1 f2 f1 f3
+system_status
+halt
